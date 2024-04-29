@@ -6,13 +6,17 @@ import '../../styles/webfont.css'
 import iconClose from './icon_close.svg';
 
 const Component = styled.div`
-  position: relative;
+`
+
+const Content = styled.div`
+  position: sticky;
+  width: 100%;
 `
 
 const CloseButton = styled.button`
   position: absolute;
-  right: 24px;
-  top: 24px;
+  right: -16px;
+  top: -16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,9 +70,11 @@ const Modal: React.FunctionComponent<Props> = props => {
       shouldCloseOnOverlayClick={true}
       onRequestClose={onClickClose}
     >
-      <CloseButton onClick={onClickClose}>
-        <CloseIcon src={iconClose}/>
-      </CloseButton>
+      <Content>
+        <CloseButton onClick={onClickClose}>
+          <CloseIcon src={iconClose}/>
+        </CloseButton>
+      </Content>
       {children}
     </ReactModal>
   );
