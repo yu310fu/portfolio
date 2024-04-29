@@ -10,7 +10,7 @@ const Component = styled.button`
   display: inline-flex; 
   align-items: center;
   height: 32px;
-  padding: 0 8px;
+  padding: 0 16px 0 8px;
   background-color: ${Palette.surface.high};
   border: 1px solid ${Palette.content.parimary};
   border-radius: 32px;
@@ -25,7 +25,7 @@ const Icon = styled.img`
 `
 
 const ButtonText = styled.span<{type?: string}>`
-  width: ${props => props.type === 'morelink' ? 'auto' : '94px'};
+  width: ${props => props.type === 'link' ? '94px' : 'auto'};
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
