@@ -84,7 +84,7 @@ const WORK = {
   single: {
     date: '2021/12~2023/8',
     title: '単発案件',
-    subText: '株式会社Fuluxx / デザイナー・コーダー（業務委託）',
+    subText: '株式会社Fluxx / デザイナー・コーダー（業務委託）',
     imageUrl: ImageWorkSingle,
     Description: 
     <>
